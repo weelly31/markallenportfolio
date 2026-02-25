@@ -68,7 +68,7 @@ export default function MinistrySection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 sm:p-10"
+          className="bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl p-8 sm:p-10"
         >
           <h4 className="text-white text-sm font-medium tracking-[0.15em] uppercase mb-6">
             Supervisory Strengths

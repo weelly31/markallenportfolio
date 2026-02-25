@@ -5,7 +5,7 @@ import { MapPin, Phone, Mail, ChevronDown } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-linear-to-br from-slate-950 via-slate-900 to-slate-800 overflow-hidden">
       {/* Subtle grid overlay */}
       <div className="absolute inset-0 opacity-[0.03]"
         style={{
@@ -15,7 +15,7 @@ export default function HeroSection() {
       />
       
       {/* Ambient glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-amber-500/5 rounded-full blur-[120px]" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-150 h-150 bg-amber-500/5 rounded-full blur-[120px]" />
       
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <motion.div

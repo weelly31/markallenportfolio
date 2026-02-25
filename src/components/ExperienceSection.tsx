@@ -91,8 +91,8 @@ export default function ExperienceSection() {
               >
                 {/* Timeline dot */}
                 <div className="absolute left-0 sm:left-8 top-1 w-px h-px">
-                  <div className="absolute -left-[4px] -top-[4px] w-[9px] h-[9px] rounded-full bg-amber-400 ring-4 ring-white" />
-                </div>
+                  <div className="absolute -left-1 -top-1 w-2.25 h-2.25 rounded-full bg-amber-400 ring-4 ring-white" />
+                  </div>
                 
                 <div className="bg-slate-50/50 rounded-2xl p-6 sm:p-8 border border-slate-100 hover:border-slate-200 transition-colors duration-300">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
