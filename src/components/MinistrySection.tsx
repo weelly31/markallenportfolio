@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Heart, Users, Music, Calendar, BookOpen, HandHeart } from "lucide-react";
 
@@ -23,7 +24,7 @@ const strengths = [
 export default function MinistrySection() {
   return (
     <section className="py-24 sm:py-32 bg-white">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-5xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -36,12 +37,41 @@ export default function MinistrySection() {
             </div>
             <h2 className="text-xs font-medium tracking-[0.2em] uppercase text-slate-400">Ministry</h2>
           </div>
-          
           <h3 className="text-3xl sm:text-4xl font-light text-slate-900 mb-12">
             Church <span className="text-amber-600">Leadership</span>
           </h3>
         </motion.div>
-        
+
+        {/* Images Row */}
+        <div className="flex flex-col md:flex-row gap-6 mb-12">
+          <div className="flex-1 flex flex-col items-center justify-center">
+            <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50">
+              <Image
+                src="/img/church.jpg"
+                alt="Speaking at church event"
+                width={600}
+                height={400}
+                className="object-cover w-full h-64"
+                priority
+              />
+            </div>
+            <p className="mt-3 text-center text-slate-600 text-sm">Sharing a message</p>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center">
+            <div className="w-full max-w-md rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50">
+              <Image
+                src="/img/church2.jpg"
+                alt="Playing instrument in worship team"
+                width={600}
+                height={400}
+                className="object-cover w-full h-64"
+                priority
+              />
+            </div>
+            <p className="mt-3 text-center text-slate-600 text-sm">Serving as a musician in the worship team</p>
+          </div>
+        </div>
+
         {/* Involvements grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
           {involvements.map((item, i) => {
@@ -61,7 +91,7 @@ export default function MinistrySection() {
             );
           })}
         </div>
-        
+
         {/* Strengths */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
