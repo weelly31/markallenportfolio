@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import { Heart, Users, Music, Calendar, BookOpen, HandHeart } from "lucide-react";
 
 const involvements = [
-  { icon: Users, label: "Youth Ministry Supervisor / Facilitator" },
+  { icon: Users, label: "Associate Pastor" },
   { icon: Calendar, label: "Camp Program Organizer & Planning Committee" },
   { icon: BookOpen, label: "Small Group Leader / Discipleship Facilitator" },
-  { icon: Music, label: "Worship Team Member (Music & Instruments)" },
+  { icon: Music, label: "Worship Team Musical Director" },
   { icon: Heart, label: "Event & Fellowship Program Coordinator" },
   { icon: HandHeart, label: "Mentorship & Spiritual Guidance for Young Adults" },
 ];
@@ -20,6 +20,7 @@ const strengths = [
   "Conflict resolution and pastoral support assistance",
   "Administrative and financial accountability support",
 ];
+// chqange profile
 
 export default function MinistrySection() {
   return (

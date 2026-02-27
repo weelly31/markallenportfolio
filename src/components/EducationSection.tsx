@@ -38,10 +38,26 @@ export default function EducationSection() {
               <span className="text-xs text-slate-400 tracking-wider uppercase bg-slate-50 px-4 py-2 rounded-full border border-slate-100 w-fit">
                 2008 – 2012
               </span>
+              </div>
+              {/* New Education Entry */}
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-8">
+                <div>
+                  <h4 className="text-lg font-medium text-slate-900">
+                    Bachelor of Arts in Theology (ABTh)
+                  </h4>
+                  <p className="text-amber-600 font-medium mt-1">
+                    Major in Pastoral Studies
+                  </p>
+                  <p className="text-slate-500 text-sm mt-2">Philippine International College</p>
+                  <p className="text-slate-500 text-xs mt-1">Completed Foundational Academic Units in Theology</p>
+                </div>
+                 <span className="text-xs text-slate-400 tracking-wider uppercase bg-slate-50 px-4 py-2 rounded-full border border-slate-100 w-fit">
+                2024 – 2025
+              </span>
+              </div>
             </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
+          </motion.div>
+        </div>
+      </section>
+    );
+  }
